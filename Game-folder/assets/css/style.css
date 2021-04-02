@@ -301,7 +301,7 @@ button.active {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "menu playAgain";
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
 }
 
 .menu-game-over-button {
