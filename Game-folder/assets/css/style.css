@@ -305,6 +305,7 @@ button.active {
 }
 
 .menu-game-over-button {
+  display: none;
   grid-area: menu;
 }
 
