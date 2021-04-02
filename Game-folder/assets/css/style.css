@@ -298,10 +298,9 @@ button.active {
 
 .game-over-button-container {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "menu playAgain";
-  /* grid-gap: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-game-over-button {
