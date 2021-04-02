@@ -1,0 +1,68 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+
+
+    <nav class="container">
+        <div class="top-banner">
+            <button class="return-main-menu" onclick="location.href='index.html'">MENU</button>
+            <button class="ingame-soundfx soundfx-button">FX ON</button>
+            <button class="ingame-music music-button">MUSIC ON</button>
+            <p class="high-score-title">H:<span class="high-score">0</span></p>
+            <p class="score-title">S:<span class="score-value">0</span></p>
+            <p class="lives-header">SHIPS:<span class="lives">3</span></p>
+            <p class="level-header">LEVEL:<span class="level">1</span></p>
+        </div>
+        <canvas id="canvas"> Sorry, your browser doesn't support the &lt;canvas&gt; element.</canvas>
+        <div class="game-over-prompt">
+            <p>You scored: <span class="game-over-score"></span></p>
+            <div class="game-over-button-container">
+                <button class="play-again-button" onclick="createNewGame()">PLAY AGAIN</button>
+                <button class="menu-game-over-button" onclick="location.href='index.html'">MENU</button>
+            </div>
+        </div>
+        <div class="controller">
+            <span class="up-button"><i class="fas fa-arrow-up"></i></i></span>
+            <span class="left-button"><i class="fas fa-arrow-left"></i></i></span>
+            <span class="right-button"><i class="fas fa-arrow-right"></i></i></span>
+            <span class="fire-button">S</span>
+        </div>
+    </nav>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+    <script src="assets/js/bullet.js"></script>
+    <script src="assets/js/asteroid.js"></script>
+    <script src="assets/js/ship.js"></script>
+    <script src="assets/js/game-constants.js"></script>
+    <script src="assets/js/user-input.js"></script>
+    <script src="assets/js/local-storage.js"></script>
+    <script src="assets/js/collision-detection.js"></script>
+    <script src="assets/js/game-utilities.js"></script>
+    <script src="assets/js/game.js"></script>
+</body>
+</html>
